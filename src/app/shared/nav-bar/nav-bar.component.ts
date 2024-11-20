@@ -11,6 +11,10 @@ import { Router, RouterModule } from '@angular/router';
 export class NavBarComponent {
   route = inject(Router);
   
-  
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
   
 }

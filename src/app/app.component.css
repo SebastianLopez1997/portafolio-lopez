@@ -1,0 +1,13 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #241e4ee9;
+}
+
+.fondo{
+    background-color: #2f275ee9;
+}
