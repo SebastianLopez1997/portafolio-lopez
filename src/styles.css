@@ -1,0 +1,20 @@
+h1 {
+  color: red;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%; /*1rem = 10px  |:3  */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+footer {
+  height: auto;
+}

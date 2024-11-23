@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-
+  contacto:string = 'sebastian.lopez.mdq@gmail.com'
 }
