@@ -1,0 +1,123 @@
+.proyectos-contenedor {
+  padding-top: 3%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 75px;
+}
+
+.proyectos-contenedor h2 {
+  font-size: 4rem;
+  color: beige;
+  padding-bottom: 3%;
+}
+
+/* Card horizontal */
+
+.a-boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.horizontal-card {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.09);
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  max-width: 600px;
+  width: 100%;
+}
+.horizontal-card h2 {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .horizontal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.09);
+
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+  }
+  .horizontal-card h2 {
+    font-size: 3rem;
+  }
+  .card-image {
+    display: none;
+  }
+  .a-boton {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    
+  }
+}
+
+/* Imagen de la card */
+.card-image {
+  width: 175px;
+  height: 210px;
+  object-fit: cover;
+}
+
+/* Contenido de la card */
+.card-content {
+  padding: 20px;
+  flex: 1;
+}
+
+/* Título */
+.card-title {
+  margin: 0 0 10px;
+  color: #333;
+  overflow: hidden;
+}
+
+/* Descripción */
+.card-description {
+  font-size: 1.4rem;
+  color: #e5e3e3;
+  margin: 0;
+}
+
+/* Parte de la card tecnologias */
+
+.tecnologias {
+  gap: 3px;
+  margin-top: 1%;
+  color: beige;
+}
+
+/* Para el a que se parezca boton */
+.link-button {
+  display: inline-block;
+  text-decoration: none; /* Eliminar subrayado */
+  background-color: #007bff38; /* Azul */
+  color: #ffffff; /* Texto blanco */
+  padding: 10px 24px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 25px; /* Esquinas redondeadas */
+  transition: all 0.3s ease; /* Suavizar transición */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+/* Efecto hover */
+.link-button:hover {
+  background-color: #0056b3; /* Azul más oscuro */
+  color: #ffffff; /* Asegurar texto blanco */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
