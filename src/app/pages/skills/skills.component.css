@@ -11,11 +11,17 @@
 .tittle{
     color: aliceblue;
     font-size: 3rem;
+    margin-bottom: 40px;
 }
 
 .about{
     color: white;
     font-size: 2rem;
+    gap: 30px;
+}
+
+.textos{
+    margin-bottom: 40px;
 }
 
 .certificates-container {
@@ -55,4 +61,18 @@
   .certificates-grid img:hover {
     transform: scale(1.1); /* Aumenta un poco más el tamaño */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  @media screen and (max-width: 700px) {
+    .fondo{
+        margin-top: 300px;
+        margin-bottom: 130px;
+    }
+    
+    .certificates-container{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+    }
   }
