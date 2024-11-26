@@ -1,0 +1,58 @@
+.fondo{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tittle{
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+.about{
+    color: white;
+    font-size: 2rem;
+}
+
+.certificates-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1800px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título */
+  .certificates-container h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Contenedor de la cuadrícula */
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta el tamaño mínimo a 300px */
+    gap: 30px; /* Espaciado entre imágenes */
+  }
+  
+  /* Estilo de las imágenes */
+  .certificates-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efecto al pasar el cursor sobre las imágenes */
+  .certificates-grid img:hover {
+    transform: scale(1.1); /* Aumenta un poco más el tamaño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
