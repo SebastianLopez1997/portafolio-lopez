@@ -8,6 +8,10 @@
   gap: 75px;
 }
 
+
+
+
+
 .proyectos-contenedor h2 {
   font-size: 4rem;
   color: beige;
@@ -32,10 +36,45 @@
   overflow: hidden;
   max-width: 600px;
   width: 100%;
+  
+  animation-name: movingD;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  position: relative;
 }
+
+@keyframes movingD {
+  0%{ 
+    left: -300px;
+    top: -100px;
+    opacity: 0;
+  }
+  
+  50%{
+    left: 300px;
+    top: 100px;
+    opacity: 0.5;
+  }
+  
+  75%{
+    opacity: 0.75;
+  }
+  
+  100%{
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+  
+}
+
+
 .horizontal-card h2 {
   font-size: 3rem;
 }
+
+
+
 
 @media screen and (max-width: 600px) {
   .horizontal-card {
