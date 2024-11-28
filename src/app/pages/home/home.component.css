@@ -4,14 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .imagen-redonda {
-  width: 200px; 
-  height: 200px; 
-  border-radius: 50%; 
-  object-fit: cover; 
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* Para el boton iluminado */
@@ -22,32 +21,32 @@
   color: white;
   background-color: #333;
   border: 2px solid transparent;
-  border-radius: 25px; 
+  border-radius: 25px;
   cursor: pointer;
   overflow: hidden;
   z-index: 0;
 }
 
-.glowing-button:hover{
+.glowing-button:hover {
   transform: scale(1.1);
 }
 
 .glowing-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 25px; 
-  border: 2px solid #00f; 
+  border-radius: 25px;
+  border: 2px solid #00f;
   box-shadow: 0 0 10px #00f, 0 0 20px #00f;
   z-index: -1;
   animation: glowing-border 2s linear infinite;
 }
 
 .glowing-button::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -55,13 +54,12 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: -2;
-  border-radius: 25px; 
+  border-radius: 25px;
 }
 
 @keyframes glowing-border {
   0% {
     clip-path: inset(0 100% 0 0);
-    
   }
   25% {
     clip-path: inset(0 0 100% 0);
@@ -102,7 +100,7 @@
 .boton {
   display: inline-flex;
   align-items: center;
-  background-color: #0077b5; 
+  background-color: #0077b5;
   color: white;
   font-size: 16px;
   padding: 10px 20px;
@@ -120,32 +118,30 @@
 }
 
 .boton:hover {
-  background-color: #005a8d; 
+  background-color: #005a8d;
   transform: scale(1.1);
 }
 
 /* Estilo específico para el botón de contacto */
 .boton-contacto {
-  background-color: #28a745; 
+  background-color: #28a745;
 }
 
-.boton-git{
+.boton-git {
   background-color: #333;
 }
 
 .boton-git:hover {
-  background-color: #3e3c3c; 
+  background-color: #3e3c3c;
 }
 
 .boton-contacto:hover {
-  background-color: #218838; 
+  background-color: #218838;
 }
 
 /* Fin espacio contenedor logo mas boton */
 
 /* Contenedor de textos */
-
-
 
 .contenedor-textos {
   padding-left: 35%;
@@ -155,8 +151,6 @@
   font-size: 2rem;
   justify-content: left;
   align-items: left;
-  
-  
 }
 
 .texto-color {
@@ -164,7 +158,7 @@
 }
 
 .contenedor-textos h1 {
-  font-size: 2em; 
+  font-size: 2em;
 }
 
 .contenedor-textos p {
@@ -172,12 +166,11 @@
   line-height: 1.6;
 }
 
-
 .slide-in {
   position: relative; /* Para permitir desplazamiento */
-  transform: translateX(-100%); 
-  opacity: 0; 
-  animation: slideIn 1s ease-out forwards; 
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideIn 1s ease-out forwards;
 }
 @keyframes slideIn {
   0% {
@@ -190,7 +183,6 @@
   }
 }
 /* Fin Contenedor de textos */
-
 
 @media screen and (max-width: 600px) {
   /* Estilos para pantallas con un ancho máximo de 600px (móviles pequeños) */
