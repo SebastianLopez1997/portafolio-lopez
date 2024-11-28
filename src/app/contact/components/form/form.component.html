@@ -1,0 +1,44 @@
+<p>form works!</p>
+<section class="body">
+    <div class="contact-form-container">
+        <h1>Contacto</h1>
+        <form action="https://formspree.io/f/mgvenqzo" [formGroup]="formulario"
+        method="POST" class="contact-form">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required formControlName="name">
+            
+            @if(formulario.controls['name'].getError('required')){
+              <p class="error">*El campo nombre es requerido</p>
+            }@else if (formulario.controls['name'].getError('minlength')) {
+              <p class="error">Debe tener mas de 3 caracteres</p>
+            }
+            
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="Tu correo" required formControlName="email">
+            
+          @if(formulario.controls['email'].getError('required')){
+            <p class="error">*El campo email es requerido</p>
+          }@else if (formulario.controls['email'].getError('email')) {
+            <p class="error">El email es invalido</p>
+          }
+            
+          <label for="subject">Asunto:</label>
+          <input type="text" id="subject" name="subject" placeholder="Asunto" required formControlName="subject">
+            
+          @if(formulario.controls['subject'].getError('required')){
+            <p class="error">*El campo asunto es requerido</p>
+          }@else if (formulario.controls['subject'].getError('minlength')) {
+            <p class="error">Debe tener mas de 4 caracteres</p>
+          }
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tu mensaje" required formControlName="message"></textarea>
+              
+          @if(formulario.controls['message'].getError('required')){
+            <p class="error">*El campo mensaje es requerido</p>
+          }@else if (formulario.controls['message'].getError('minlength')) {
+            <p class="error">Debe tener mas de 15 caracteres</p>
+          }
+          <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>

@@ -1,0 +1,35 @@
+<section class="fondo">
+  <h2 class="tittle">Sobre mi</h2>
+  <div class="about">
+    <div class="textos">
+      <p>
+        Me llamo Lopez Sebastian, apacionado por la tecnologia. Actualmente me
+        encuentro estudiando en la
+        <strong>tecnicatura en programacion en la UTN</strong>
+      </p>
+      <p>
+        Estoy en constante aprendizaje de diversas tecnologias, realice algunos
+        cursos en plataformas de aprendizaje
+      </p>
+    </div>
+    <div class="button-container">
+      <a
+        href="https://github.com/SebastianLopez1997/My-CV"
+        target="_blank"
+        class="btn-download"
+        >Descargar mi CV GitHub</a
+      >
+    </div>
+    <div class="certificates-container">
+      <h3>Mis Certificados</h3>
+      <div class="certificates-grid">
+        @for (item of array; track $index) {
+        <img
+          src="{{item.url}}"
+          alt="{{item.alt}}"
+        />
+        }
+      </div>
+    </div>
+  </div>
+</section>
