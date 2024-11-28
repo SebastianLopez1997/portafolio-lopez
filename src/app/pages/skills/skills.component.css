@@ -1,5 +1,5 @@
 .fondo {
-  height: 100vh;
+  height: 100%;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -9,8 +9,8 @@
 
 .tittle {
   color: aliceblue;
-  font-size: 3rem;
-  margin-bottom: 40px;
+  font-size: 3.5rem;
+  margin-bottom: 50px;
 }
 
 .about {
@@ -61,14 +61,14 @@
 
 /* Efecto al pasar el cursor sobre las imágenes */
 .certificates-grid img:hover {
-  transform: scale(1.1); /* Aumenta un poco más el tamaño */
+  transform: scale(2); 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
   .fondo {
     margin-top: 300px;
-    margin-bottom: 130px;
+    margin-bottom: 330px;
   }
 
   .certificates-container {
@@ -76,4 +76,31 @@
     flex-direction: column;
     max-width: 400px;
   }
+  
+  .certificates-grid img:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Para el boton CV */
+.button-container {
+  text-align: center;
+}
+
+.btn-download {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #007BFF;
+  padding: 15px 30px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+.btn-download:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
 }
