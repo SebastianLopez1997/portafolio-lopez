@@ -1,204 +1,203 @@
 .fondo {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imagen-redonda {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Para el boton iluminado */
+.glowing-button {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #333;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.glowing-button:hover {
+  transform: scale(1.1);
+}
+
+.glowing-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  border: 2px solid #00f;
+  box-shadow: 0 0 10px #00f, 0 0 20px #00f;
+  z-index: -1;
+  animation: glowing-border 2s linear infinite;
+}
+
+.glowing-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -2;
+  border-radius: 25px;
+}
+
+@keyframes glowing-border {
+  0% {
+    clip-path: inset(0 100% 0 0);
   }
-  
-  .imagen-redonda {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
+  25% {
+    clip-path: inset(0 0 100% 0);
   }
-  
-  /* Para el boton iluminado */
-  .glowing-button {
-    position: relative;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #333;
-    border: 2px solid transparent;
-    border-radius: 25px;
-    cursor: pointer;
-    overflow: hidden;
-    z-index: 0;
+  50% {
+    clip-path: inset(100% 0 0 0);
   }
-  
-  .glowing-button:hover {
-    transform: scale(1.1);
+  75% {
+    clip-path: inset(0 0 0 100%);
   }
-  
-  .glowing-button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-    border: 2px solid #00f;
-    box-shadow: 0 0 10px #00f, 0 0 20px #00f;
-    z-index: -1;
-    animation: glowing-border 2s linear infinite;
+  100% {
+    clip-path: inset(0 100% 0 0);
   }
-  
-  .glowing-button::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -2;
-    border-radius: 25px;
-  }
-  
-  @keyframes glowing-border {
-    0% {
-      clip-path: inset(0 100% 0 0);
-    }
-    25% {
-      clip-path: inset(0 0 100% 0);
-    }
-    50% {
-      clip-path: inset(100% 0 0 0);
-    }
-    75% {
-      clip-path: inset(0 0 0 100%);
-    }
-    100% {
-      clip-path: inset(0 100% 0 0);
-    }
-  }
-  
-  /* Fin del boton iluminado */
-  
-  /* Contenedor espacio logo mas boton */
-  .contenedor-logo {
-    padding-left: 20px;
-    padding-top: 3%;
-    padding-bottom: 2%;
-    width: auto;
-    height: auto;
-    gap: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .contenedor-redirreccion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .boton {
-    display: inline-flex;
-    align-items: center;
-    background-color: #0077b5;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .boton img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
-  
-  .boton:hover {
-    background-color: #005a8d;
-    transform: scale(1.1);
-  }
-  
-  /* Estilo específico para el botón de contacto */
-  .boton-contacto {
-    background-color: #28a745;
-  }
-  
-  .boton-git {
-    background-color: #333;
-  }
-  
-  .boton-git:hover {
-    background-color: #3e3c3c;
-  }
-  
-  .boton-contacto:hover {
-    background-color: #218838;
-  }
-  
-  /* Fin espacio contenedor logo mas boton */
-  
-  /* Contenedor de textos */
-  
-  .contenedor-textos {
-    padding-left: 35%;
-    display: flex;
-    flex-direction: column;
-    color: aliceblue;
-    font-size: 2rem;
-    justify-content: left;
-    align-items: left;
-  }
-  
-  .texto-color {
-    color: yellow;
-  }
-  
-  .contenedor-textos h1 {
-    font-size: 2em;
-  }
-  
-  .contenedor-textos p {
-    font-size: 1.2em;
-    line-height: 1.6;
-  }
-  
-  .slide-in {
-    position: relative; /* Para permitir desplazamiento */
+}
+
+/* Fin del boton iluminado */
+
+/* Contenedor espacio logo mas boton */
+.contenedor-logo {
+  padding-left: 20px;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  width: auto;
+  height: auto;
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-redirreccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.boton {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0077b5;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.boton img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.boton:hover {
+  background-color: #005a8d;
+  transform: scale(1.1);
+}
+
+/* Estilo específico para el botón de contacto */
+.boton-contacto {
+  background-color: #0f295a;
+}
+
+.boton-git {
+  background-color: #333;
+}
+
+.boton-git:hover {
+  background-color: #3e3c3c;
+}
+
+.boton-contacto:hover {
+  background-color: #072291cc;
+}
+
+/* Fin espacio contenedor logo mas boton */
+
+/* Contenedor de textos */
+
+.contenedor-textos {
+  padding-left: 35%;
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  font-size: 2rem;
+  justify-content: left;
+  align-items: left;
+}
+
+.texto-color {
+  color: yellow;
+}
+
+.contenedor-textos h1 {
+  font-size: 2em;
+}
+
+.contenedor-textos p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.slide-in {
+  position: relative; /* Para permitir desplazamiento */
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideIn 1s ease-out forwards;
+}
+@keyframes slideIn {
+  0% {
     transform: translateX(-100%);
     opacity: 0;
-    animation: slideIn 1s ease-out forwards;
   }
-  @keyframes slideIn {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-  /* Fin Contenedor de textos */
-  
-  @media screen and (max-width: 600px) {
-    /* Estilos para pantallas con un ancho máximo de 600px (móviles pequeños) */
-    .contenedor-textos p {
-      font-size: 1.5rem;
-    }
-    .contenedor-textos h1 {
-      font-size: 1.5rem;
-    }
-    .contenedor-logo {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .contenedor-redirreccion {
-      flex-direction: column;
-    }
+}
+/* Fin Contenedor de textos */
+
+@media screen and (max-width: 600px) {
+  /* Estilos para pantallas con un ancho máximo de 600px (móviles pequeños) */
+  .contenedor-textos p {
+    font-size: 1.5rem;
   }
-  
+  .contenedor-textos h1 {
+    font-size: 1.5rem;
+  }
+  .contenedor-logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor-redirreccion {
+    flex-direction: column;
+  }
+}
