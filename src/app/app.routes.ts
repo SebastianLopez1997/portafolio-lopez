@@ -1,13 +1,13 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { AboutMePageComponent } from './aboutMe/pages/about-me-page/about-me-page.component';
 import { ContactFormPageComponent } from './contact/pages/contact-form-page/contact-form-page.component';
+import { HomePageComponent } from './home/pages/home-page/home-page.component';
 
 export const routes: Routes = [
   {
     path: 'home',
-    component: HomeComponent,
+    component: HomePageComponent,
   },
   {
     path: '',

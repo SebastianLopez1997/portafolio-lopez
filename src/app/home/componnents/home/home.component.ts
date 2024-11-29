@@ -9,7 +9,6 @@ import { Router, RouterModule } from '@angular/router';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  
   route = inject(Router);
   
   //Funcion para navegar al linkedin desde el boton trabajar
@@ -17,6 +16,4 @@ export class HomeComponent {
   navegarPerfil(){
    window.open('https://www.linkedin.com/in/sebastian-lopez-422788224/','_blank') 
   }
-  
-  
 }
