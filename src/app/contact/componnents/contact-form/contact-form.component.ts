@@ -1,15 +1,14 @@
 import { Component, inject } from '@angular/core';
-import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-form-page',
+  selector: 'app-contact-form',
   standalone: true,
   imports: [ReactiveFormsModule],
-  templateUrl: './form-page.component.html',
-  styleUrl: './form-page.component.css'
+  templateUrl: './contact-form.component.html',
+  styleUrl: './contact-form.component.css'
 })
-export class FormPageComponent {
-  
+export class ContactFormComponent {
   fb = inject(FormBuilder)
   
   formulario = this.fb.nonNullable.group({
@@ -22,8 +21,5 @@ export class FormPageComponent {
   formOk(){
     if(this.formulario.invalid) return
     
-    
   }
-  
-  
 }
