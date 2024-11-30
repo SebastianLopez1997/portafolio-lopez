@@ -1,5 +1,10 @@
-h1 {
-  color: red;
+:root {
+  --main-text-white: white;
+  --main-text-yellow: rgb(251, 248, 35);
+  --main-text-blue: rgb(0, 0, 252);
+  --main-text-dark-blue: #0f295a;
+  --main-text-grey: rgb(36, 36, 46);
+  --main-text-black: rgb(0, 0, 0);
 }
 
 html {
