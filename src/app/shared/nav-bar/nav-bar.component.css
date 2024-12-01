@@ -30,6 +30,7 @@
 
 .nav-links li a:hover {
   color: var(--main-text-yellow);
+  transform: scale(1.2);
 }
 
 /* Menú hamburguesa */

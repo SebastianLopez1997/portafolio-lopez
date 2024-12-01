@@ -6,20 +6,22 @@ import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
   standalone: true,
   imports: [ReactiveFormsModule],
   templateUrl: './contact-form.component.html',
-  styleUrl: './contact-form.component.css'
+  styleUrl: './contact-form.component.css',
 })
 export class ContactFormComponent {
-  fb = inject(FormBuilder)
-  
+  fb = inject(FormBuilder);
+
   formulario = this.fb.nonNullable.group({
-    name: ['',[Validators.required,Validators.minLength(3)]],
-    email: ['',[Validators.required,Validators.email]],
-    subject: ['',[Validators.required,Validators.minLength(4)]],
-    message: ['Hola! me gustaria contratar tus servicios',[Validators.required,Validators.minLength(15)]]
-  })
-  
-  formOk(){
-    if(this.formulario.invalid) return
-    
+    name: ['', [Validators.required, Validators.minLength(3)]],
+    email: ['', [Validators.required, Validators.email]],
+    subject: ['', [Validators.required, Validators.minLength(4)]],
+    message: [
+      'Hola! me gastaría contratar tus servicios',
+      [Validators.required, Validators.minLength(15)],
+    ],
+  });
+
+  formOk() {
+    if (this.formulario.invalid) return;
   }
 }
