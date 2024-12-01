@@ -3,9 +3,10 @@
     <h1>Contacto</h1>
     <form
       action="https://formspree.io/f/mgvenqzo"
-      [formGroup]="formulario"
       method="POST"
       class="contact-form"
+      (ngSubmit)="formOk()"
+      [formGroup]="formulario"
     >
       <label for="name">Nombre:</label>
       <input

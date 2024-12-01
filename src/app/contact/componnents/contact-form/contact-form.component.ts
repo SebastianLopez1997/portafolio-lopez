@@ -23,5 +23,7 @@ export class ContactFormComponent {
 
   formOk() {
     if (this.formulario.invalid) return;
+    console.log('work');
+    alert('Actualmente tiene una falla con el formspree.io');
   }
 }
