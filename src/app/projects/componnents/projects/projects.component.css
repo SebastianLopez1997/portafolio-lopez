@@ -162,4 +162,9 @@
   .proyectos-contenedor {
     margin-top: 55%;
   }
+
+  .horizontal-card {
+    min-height: 225px;
+    height: auto;
+  }
 }
