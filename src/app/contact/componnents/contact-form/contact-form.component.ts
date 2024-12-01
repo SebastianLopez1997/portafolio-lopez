@@ -16,7 +16,7 @@ export class ContactFormComponent {
     email: ['', [Validators.required, Validators.email]],
     subject: ['', [Validators.required, Validators.minLength(4)]],
     message: [
-      'Hola! me gastaría contratar tus servicios',
+      'Hola! me gustaría contratar tus servicios',
       [Validators.required, Validators.minLength(15)],
     ],
   });
