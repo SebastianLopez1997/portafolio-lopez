@@ -15,7 +15,7 @@ export class ProjectsComponent {
       alt: 'Logo Electronica importada mdq',
       titulo: 'e-commerce',
       descripcion:
-        'e-commere funcional a pedido por un cliente. Cuenta con base de datos para clientes y productos',
+        'e-commerce funcional a pedido por un cliente. Cuenta con base de datos para clientes y productos',
       tecnologias: 'Wordpress',
       urlVisita: 'https://electronicaimportadamdq.com/',
     },
@@ -24,7 +24,7 @@ export class ProjectsComponent {
       alt: 'Logo GitHub',
       titulo: 'Landing page',
       descripcion:
-        'Landing page realizada para una influenser y artista en tik-tok y youtube.',
+        'Landing page realizada para una influencer y artista en tik-tok y youtube.',
       tecnologias: 'HTML, CSS Y JAVASCRIPT',
       urlVisita: 'https://github.com/SebastianLopez1997/Cande-LandingPage',
     },
