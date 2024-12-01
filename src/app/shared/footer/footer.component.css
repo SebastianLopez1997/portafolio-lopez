@@ -1,13 +1,20 @@
-.footer{
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: end;
-    margin-bottom: 0%;
-    height: auto%;
-    width: 100%;
-    color: rgb(252, 252, 252);
-    margin: 0;
-    padding: 0;
-    font-size: 2rem;
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  margin-bottom: 0%;
+  height: auto;
+  width: 100%;
+  color: rgb(252, 252, 252);
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    font-size: 1.5rem;
+    overflow-x: hidden;
+  }
 }

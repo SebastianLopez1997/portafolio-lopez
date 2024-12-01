@@ -218,10 +218,29 @@
 }
 /* Fin Contenedor de textos */
 
+@media screen and (max-width: 768px) {
+  .contenedor-logo {
+    flex-direction: column;
+  }
+
+  .contenedor-textos p {
+    font-size: 1.5rem;
+    width: 600px;
+  }
+
+  .contenedor-redirreccion {
+    justify-content: center;
+  }
+  .fondo {
+    width: auto;
+  }
+}
+
 @media screen and (max-width: 600px) {
   /* Estilos para pantallas con un ancho máximo de 600px (móviles pequeños) */
   .contenedor-textos p {
     font-size: 1.5rem;
+    width: auto;
   }
   .contenedor-textos h1 {
     font-size: 1.5rem;
@@ -235,6 +254,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: auto;
+  }
+
+  .fondo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contenedor-logo {
+    flex-direction: column;
+  }
+
+  .contenedor-textos p {
+    font-size: 1.5rem;
+    width: 200px;
+  }
+
+  .contenedor-redirreccion {
+    justify-content: center;
+    width: auto;
+  }
+
+  .fondo {
+    height: 100%;
   }
 }
 
