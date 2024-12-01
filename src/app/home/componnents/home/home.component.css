@@ -28,7 +28,7 @@
 .glowing-button {
   position: relative;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 1.5rem;
   color: var(--main-text-white);
   background-color: var(--main-text-black);
   border: 2px solid transparent;
@@ -123,8 +123,9 @@
 
 .contenedor-redirreccion {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 800px;
+  justify-content: end;
+  align-items: flex-end;
   gap: 30px;
 }
 
@@ -132,7 +133,7 @@
   display: inline-flex;
   align-items: center;
   color: var(--main-text-white);
-  font-size: 16px;
+  font-size: 1.6rem;
   padding: 10px 20px;
   margin: 10px;
   border: none;
@@ -232,6 +233,8 @@
 
   .contenedor-redirreccion {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
