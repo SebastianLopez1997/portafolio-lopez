@@ -11,7 +11,7 @@ import { ProjectInterface } from '../../../interfaces/project-interface';
 export class ProjectsComponent {
   projects: ProjectInterface[] = [
     {
-      url: 'https://electronicaimportadamdq.com/wp-content/uploads/2024/03/Logo_Juan_Original-removebg-preview-300x300.png',
+      url: 'assets/img/logo-electronica.jpg',
       alt: 'Logo Electronica importada mdq',
       titulo: 'e-commerce',
       descripcion:
