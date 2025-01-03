@@ -30,12 +30,20 @@ export class ProjectsComponent {
     },
     {
       url: 'https://acdn.mitiendanube.com/stores/001/216/412/products/photoroom-20240828_175815_48-e6178c027c212865b117261621663002-640-0.png',
-      alt: 'Logotico forumula 1',
+      alt: 'Logotipo forumula 1',
       titulo: 'Juego web F1',
       descripcion:
         'Proyecto para finalizacion cuatrimestre UTN Juego web utilizando Angular 18. Consumo de API',
       tecnologias: 'Angular Cli',
       urlVisita: 'https://github.com/SebastianLopez1997/F1-GAME',
+    },
+    {
+      url: 'assets/img/Logotipo.png',
+      alt: 'Logotipo NIRVANERA 4RT',
+      titulo: 'NIRVANERA 4RT',
+      descripcion: 'Landing page para presentacion de artista',
+      tecnologias: 'Angular Cli',
+      urlVisita: 'https://nirvanera-4rt.site/',
     },
   ];
 }
